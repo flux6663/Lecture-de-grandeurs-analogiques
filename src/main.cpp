@@ -12,7 +12,7 @@ void setup()
 void loop()
 {
   String chaineTrimmer = (String)lireEntreeAnalogique(BROCHE_TRIMMER_1) + "(10)";
-  String chaineTrimmerMilliVolte = (String)lireEntreeAnalogiqueMilliVolte(BROCHE_TRIMMER_1) + "mV";
+  String chaineTrimmerMilliVolte = (String)lireEntreeAnalogiqueMilliVolte(BROCHE_TRIMMER_1) + "V";
 
   static unsigned long currentTime = 0;
   static unsigned long previousTime = 0;

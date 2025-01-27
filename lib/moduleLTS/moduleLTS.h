@@ -10,7 +10,7 @@
 
 void configurerADC(uint8_t brocheADC, uint8_t resolution = ADC_WIDTH_BIT_12, adc_attenuation_t attenuation = ADC_11db);
 
-uint32_t lireEntreeAnalogiqueMilliVolte(uint8_t brocheADC);
+float lireEntreeAnalogiqueMilliVolte(uint8_t brocheADC);
 uint16_t lireEntreeAnalogique(uint8_t brocheADC);
 
 #endif

@@ -13,11 +13,10 @@ void configurerADC(uint8_t brocheADC, uint8_t resolution, adc_attenuation_t atte
 uint16_t lireEntreeAnalogique(uint8_t brocheADC)
 {
     uint16_t valeur = analogRead(brocheADC);
-    // int calibratedReading = (int)ADC_LUT[valeur];
     return valeur;
 }
 
-uint32_t lireEntreeAnalogiqueMilliVolte(uint8_t brocheADC)
+float lireEntreeAnalogiqueMilliVolte(uint8_t brocheADC)
 {
-    return analogReadMilliVolts(brocheADC);
+    return lireEntreeAnalogique(brocheADC) * (3.3 - 0) / (4095);
 }
